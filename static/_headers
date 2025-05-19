@@ -1,0 +1,76 @@
+# Cache fonts for 1 year
+/fonts/*
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+# Cache optimized images for 1 year
+/optimized-images/*
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+# Cache regular images for 1 year
+/images/*
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+# Cache app immutable assets for 1 year
+/_app/immutable/*
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+# Shorter cache for other app assets
+/_app/*
+  Cache-Control: public, max-age=3600, s-maxage=86400
+
+# Cache static assets for 1 year
+/static/*
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+# Cache specific file types
+# Font files
+/*.woff
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.woff2
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.ttf
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+# Image files
+/*.png
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.jpg
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.jpeg
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.webp
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.avif
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+# JavaScript and CSS files
+/*.js
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+
+# Default cache for other static assets
+/*
+  Cache-Control: public, max-age=86400, s-maxage=604800
+
+# HTML files - use different caching strategy without max-age/s-maxage when no-store might be applied
+/*.html
+  Cache-Control: public, must-revalidate
+
+# Content Security Policy
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: lh3.googleusercontent.com; font-src 'self'; connect-src 'self' *.sentry.io; media-src 'self'; object-src 'none'; frame-src 'self';
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin

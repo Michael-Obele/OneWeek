@@ -1,0 +1,30 @@
+name = "oneweek-website"
+compatibility_flags = ["nodejs_compat_v2"]
+pages_build_output_dir = ".svelte-kit/cloudflare"
+compatibility_date = "2024-09-23"
+
+[env.preview]
+[env.preview.vars]
+PUBLIC_ENV="development"
+PUBLIC_API_URL="https://dev.api.oneweek.work"
+PUBLIC_WEBSOCKET_URL="wss://dev.api.oneweek.work"
+PUBLIC_CROSS_ORIGIN="false"
+PUBLIC_X_API_KEY=""
+PUBLIC_MAINTENANCE_MODE="false"
+PUBLIC_FEATURE_WAITLIST="false"
+PUBLIC_STRIPE_BILLING_URL="https://billing.stripe.com/p/login/test_00g00zcQt8UI3fi3cc"
+PUBLIC_STRIPE_KEY="pk_test_zNzh2o1OkU21yGQAhUW6W0Yp00Z19jXMyA"
+PUBLIC_SENTRY_DSN=""
+
+[env.production]
+[env.production.vars]
+PUBLIC_ENV="production"
+PUBLIC_API_URL="https://api.oneweek.work"
+PUBLIC_WEBSOCKET_URL="wss://api.oneweek.work"
+PUBLIC_CROSS_ORIGIN="false"
+PUBLIC_X_API_KEY=""
+PUBLIC_MAINTENANCE_MODE="false"
+PUBLIC_FEATURE_WAITLIST="true"
+PUBLIC_STRIPE_BILLING_URL="https://billing.stripe.com/p/login/test_00g00zcQt8UI3fi3cc"
+PUBLIC_STRIPE_KEY="pk_test_zNzh2o1OkU21yGQAhUW6W0Yp00Z19jXMyA"
+PUBLIC_SENTRY_DSN="https://67d68fd356b430d178e0a1bb7c5d0299@o4504450889744384.ingest.us.sentry.io/4507541580480512"

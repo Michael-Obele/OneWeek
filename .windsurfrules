@@ -1,0 +1,4 @@
+1. use svelte 5 runes
+2. use daisyui components and theming
+3. use tailwindcss for styling
+4. using daisyui theming, dont add rounded or border radius

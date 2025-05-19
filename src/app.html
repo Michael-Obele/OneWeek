@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>OneWeek | A better work-marketplace</title>
+    <meta name="description"
+        content="4% job-completion fee. You keep the rest. No contract initiation fees. No connect fees. No service fee tiers." />
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="OneWeek | A better work-marketplace" />
+    <meta property="og:description"
+        content="4% job-completion fee. You keep the rest. No contract initiation fees. No connect fees. No service fee tiers." />
+    <meta property="og:image" content="%sveltekit.assets%/images/oneweek_banner.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OneWeek | A better work-marketplace" />
+    <meta name="twitter:description"
+        content="4% job-completion fee. You keep the rest. No contract initiation fees. No connect fees. No service fee tiers." />
+    <meta name="twitter:image" content="%sveltekit.assets%/images/oneweek_banner.png" />
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="/fonts/Urbanist-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin />
+
+    <style>
+        @font-face {
+            font-family: 'Urbanist';
+            src: url('/fonts/Urbanist-VariableFont_wght.ttf') format('truetype-variations');
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Urbanist';
+            src: url('/fonts/Urbanist-Italic-VariableFont_wght.ttf') format('truetype-variations');
+            font-weight: 100 900;
+            font-style: italic;
+            font-display: swap;
+        }
+    </style>
+
+    %sveltekit.head%
+</head>
+
+<body>
+    <div class="contents">%sveltekit.body%</div>
+</body>
+
+</html>

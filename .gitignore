@@ -1,0 +1,44 @@
+test-results
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Custom
+/package
+coverage/
+e2eresults.json
+package-lock.json
+src/lib/assets/styles/tailwind-output.css
+pnpm-lock.yaml
+
+# Optimized Images
+# **/*.webp
+# **/*.avif
+# **/*-optimized.png
+# **/*-[0-9]*.webp
+# **/*-[0-9]*.avif
+
+# Sentry Config File
+.env.sentry-build-plugin
+
+bun.lock
